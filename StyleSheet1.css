@@ -1,0 +1,180 @@
+﻿@font-face {
+    font-family: 'Madeleina Sans';
+    src: url('Font/Madeleina Sans.otf') format('opentype');
+}
+body {
+    background-color: #323232;
+    color: #ffffff;
+    font-family: 'Madeleina Sans', 'Times New Roman', Times, serif;
+    transition: background-color .5s;
+}
+
+/*NavBar*/
+
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7c17f5;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+    transition: 0.5s
+}
+.navbar img{
+    width:200px;
+    height:100px;
+    border-radius:25px;
+}
+.navbar a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    text-align: left;
+    position: relative;
+    transition: 0.3s;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+}
+.navbarin {
+    position:absolute;
+    top:10%;
+    margin-left:10%;
+    text-align:center;
+}
+.navbarin a:hover{
+    color:#d1d1d1;
+}
+.navbarin a::before{
+    content:'';
+    display:block;
+    height:5px;
+    width:0%;
+    background-color:#d1d1d1;
+    position:absolute;
+    bottom:0;
+    transition:all ease-in-out 400ms;
+}
+.navbarin a:hover::before{
+    width:75%;
+}
+
+
+/*Content*/
+
+
+.main span{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.main {
+    text-align: center;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.main img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.main p{
+    font-size:20px;
+}
+
+
+/*Games*/
+
+
+.dropdown{
+    margin-left:250px;
+    margin-top:10px;
+    margin-right:100px;
+    text-align:right;
+}
+.Games {
+    text-align:center;
+}
+    .Games span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+.Games img {
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+.Games figure{
+    display:inline-block;
+}
+
+
+/*Computers*/
+
+
+.computers{
+    text-align:center;
+}
+    .computers span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+.computers img{
+    width:400px;
+    height:350px;
+    display:inline-block;
+}
+.computers figure{
+    display:inline-block;
+}
+
+/*Contact*/
+
+.Contact{
+    position:relative;
+    margin-left:10%;
+    text-align:left;
+}
+#openbtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*Trailers*/
+.Trailers{
+    text-align:center;
+
+}
+    .Trailers span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+/*Cart*/
+.cart{
+    position:absolute;
+}
+.cart img {
+        width: 100px;
+        height: 200px;
+        display: inline-block;
+}
+    .cart span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
